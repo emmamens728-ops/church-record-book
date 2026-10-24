@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bannerBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e40af" />
+      <stop offset="40%" stop-color="#1e3a8a" />
+      <stop offset="80%" stop-color="#172554" />
+      <stop offset="100%" stop-color="#0b132b" />
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="35%" stop-color="#f59e0b" />
+      <stop offset="70%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#92400e" />
+    </linearGradient>
+    <filter id="glowEffect">
+      <feGaussianBlur stdDeviation="4" result="glow"/>
+      <feComposite in="SourceGraphic" in2="glow" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="500" fill="url(#bannerBg)" rx="16" />
+
+  <!-- Heavenly Rays -->
+  <g opacity="0.3" stroke="url(#goldGrad)" stroke-width="2">
+    <line x1="250" y1="250" x2="250" y2="0" />
+    <line x1="250" y1="250" x2="426" y2="74" />
+    <line x1="250" y1="250" x2="500" y2="250" />
+    <line x1="250" y1="250" x2="426" y2="426" />
+    <line x1="250" y1="250" x2="250" y2="500" />
+    <line x1="250" y1="250" x2="74" y2="426" />
+    <line x1="250" y1="250" x2="0" y2="250" />
+    <line x1="250" y1="250" x2="74" y2="74" />
+  </g>
+
+  <!-- Circular Outer Border -->
+  <circle cx="250" cy="220" r="160" fill="none" stroke="url(#goldGrad)" stroke-width="5" />
+  <circle cx="250" cy="220" r="152" fill="none" stroke="#fef08a" stroke-width="1.5" stroke-dasharray="3,3" />
+
+  <!-- Holy Spirit Dove Silhouette -->
+  <g transform="translate(0, -10)" filter="url(#glowEffect)">
+    <path d="M 250,185 C 275,150 310,130 345,125 C 330,150 315,170 300,185 C 320,175 340,170 350,170 C 335,190 315,205 295,215 C 270,225 250,215 250,215 Z" fill="#ffffff" />
+    <path d="M 250,185 C 225,150 190,130 155,125 C 170,150 185,170 200,185 C 180,175 160,170 150,170 C 165,190 185,205 205,215 C 230,225 250,215 250,215 Z" fill="#ffffff" />
+    <ellipse cx="250" cy="165" rx="9" ry="11" fill="#ffffff" />
+    <polygon points="250,155 247,161 253,161" fill="#fbbf24" />
+    <!-- Olive sprig -->
+    <path d="M 250,157 Q 240,150 230,152" fill="none" stroke="#22c55e" stroke-width="2" />
+    <circle cx="230" cy="152" r="3" fill="#22c55e" />
+  </g>
+
+  <!-- Church Name -->
+  <text x="250" y="275" font-family="'Cinzel', Georgia, serif" font-weight="900" font-size="20" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="2">
+    HOUSE OF POWER
+  </text>
+  <text x="250" y="302" font-family="'Cinzel', Georgia, serif" font-weight="700" font-size="13" fill="#93c5fd" text-anchor="middle" letter-spacing="3">
+    MINISTRY INTERNATIONAL
+  </text>
+  <text x="250" y="325" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="11" fill="#cbd5e1" text-anchor="middle" letter-spacing="4">
+    MANKESSIM • GHANA
+  </text>
+
+  <!-- Motto Banner -->
+  <g transform="translate(0, 30)">
+    <path d="M 100,380 C 175,365 325,365 400,380 L 395,415 C 320,400 180,400 105,415 Z" fill="url(#goldGrad)" stroke="#78350f" stroke-width="1.5" />
+    <text x="250" y="402" font-family="'Cinzel', Georgia, serif" font-weight="900" font-size="15" fill="#1e1b4b" text-anchor="middle" letter-spacing="1.5">
+      HEAVEN OO!!! ƐHO ƐNA YƐPƐ
+    </text>
+  </g>
+</svg>

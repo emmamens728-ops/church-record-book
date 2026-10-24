@@ -1,0 +1,6 @@
+{
+  "name": "House of Power Ministry Attendance Management",
+  "description": "Official Church Attendance Management System for House of Power Ministry International Church, Mankessim, Ghana.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

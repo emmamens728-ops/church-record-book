@@ -1,0 +1,24 @@
+{
+  "churchName": "House of Power Ministry International Church",
+  "branch": "Mankessim Central Branch",
+  "exportedAt": "2026-10-24T01:13:23.970Z",
+  "reason": "Automated pre-reset safety backup",
+  "recordsCount": {
+    "members": 1,
+    "attendance": 0
+  },
+  "members": [
+    {
+      "id": "mem-test-1",
+      "memberCode": "HOP-MKS-001",
+      "fullName": "Elder Kwesi Annan Darko",
+      "gender": "Male",
+      "ageCategory": "Adult",
+      "phone": "0244112233",
+      "department": "Men's Ministry",
+      "residentialAddress": "Mankessim Central Market",
+      "status": "Active"
+    }
+  ],
+  "attendance": []
+}

@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Gold Metallic Gradients -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="25%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#d97706" />
+      <stop offset="75%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <linearGradient id="goldRibbon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b45309" />
+      <stop offset="15%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#fef08a" />
+      <stop offset="85%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <!-- Deep Royal Blue Gradients -->
+    <radialGradient id="skyCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="40%" stop-color="#2563eb" />
+      <stop offset="80%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </radialGradient>
+
+    <linearGradient id="ringBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="50%" stop-color="#172554" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow for Dove -->
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Circular Text Paths -->
+    <!-- Top Arc Path: Radius ~ 195 -->
+    <path id="topArcPath" d="M 55,250 A 195,195 0 0,1 445,250" fill="none" />
+    <!-- Bottom Arc Path: Radius ~ 195, from right to left so text reads upright -->
+    <path id="bottomArcPath" d="M 445,250 A 195,195 0 0,1 55,250" fill="none" />
+  </defs>
+
+  <!-- IMPORTANT: Absolutely NO outer white square or rectangle. Canvas background is 100% transparent. -->
+
+  <!-- 1. Outer Golden Ring with Rope/Beaded Texture -->
+  <circle cx="250" cy="250" r="240" fill="none" stroke="url(#goldGradient)" stroke-width="6" />
+  <circle cx="250" cy="250" r="234" fill="none" stroke="#fef08a" stroke-width="1.5" stroke-dasharray="3,3" />
+  <circle cx="250" cy="250" r="230" fill="none" stroke="url(#goldGradient)" stroke-width="2" />
+
+  <!-- 2. Royal Blue Lettering Band -->
+  <circle cx="250" cy="250" r="195" fill="none" stroke="url(#ringBlue)" stroke-width="66" />
+
+  <!-- 3. Inner Golden Rings surrounding central medallion -->
+  <circle cx="250" cy="250" r="162" fill="none" stroke="url(#goldGradient)" stroke-width="4" />
+  <circle cx="250" cy="250" r="158" fill="none" stroke="#fef08a" stroke-width="1" stroke-dasharray="2,2" />
+  <circle cx="250" cy="250" r="156" fill="none" stroke="url(#goldGradient)" stroke-width="1.5" />
+
+  <!-- 4. Upper Circular Lettering: HOUSE OF POWER OF MINISTRY INTERNATIONAL -->
+  <text font-family="'Cinzel', 'Times New Roman', Georgia, serif" font-weight="800" font-size="20.5" fill="url(#goldGradient)" letter-spacing="2.8" filter="url(#softShadow)">
+    <textPath href="#topArcPath" startOffset="50%" text-anchor="middle">
+      HOUSE OF POWER OF MINISTRY INTERNATIONAL
+    </textPath>
+  </text>
+
+  <!-- Left & Right Gold Star Separators -->
+  <g transform="translate(62, 250)">
+    <polygon points="0,-7 2,-2 7,-2 3,1 5,6 0,3 -5,6 -3,1 -7,-2 -2,-2" fill="url(#goldGradient)" />
+  </g>
+  <g transform="translate(438, 250)">
+    <polygon points="0,-7 2,-2 7,-2 3,1 5,6 0,3 -5,6 -3,1 -7,-2 -2,-2" fill="url(#goldGradient)" />
+  </g>
+
+  <!-- 5. Lower Circular Lettering: MANKESSIM - GHANA -->
+  <text font-family="'Cinzel', 'Times New Roman', Georgia, serif" font-weight="800" font-size="21" fill="url(#goldGradient)" letter-spacing="4.5" filter="url(#softShadow)">
+    <textPath href="#bottomArcPath" startOffset="50%" text-anchor="middle">
+      MANKESSIM - GHANA
+    </textPath>
+  </text>
+
+  <!-- 6. Central Celestial Medallion (Blue Sky with Radiant Glory Rays) -->
+  <circle cx="250" cy="250" r="154" fill="url(#skyCenter)" />
+
+  <!-- Radiant Golden Glory Sunburst Rays -->
+  <g opacity="0.4" stroke="url(#goldGradient)" stroke-width="1.5">
+    <line x1="250" y1="250" x2="250" y2="100" />
+    <line x1="250" y1="250" x2="356" y2="144" />
+    <line x1="250" y1="250" x2="400" y2="250" />
+    <line x1="250" y1="250" x2="356" y2="356" />
+    <line x1="250" y1="250" x2="250" y2="400" />
+    <line x1="250" y1="250" x2="144" y2="356" />
+    <line x1="250" y1="250" x2="100" y2="250" />
+    <line x1="250" y1="250" x2="144" y2="144" />
+    <line x1="250" y1="250" x2="323" y2="118" stroke-dasharray="2,3" />
+    <line x1="250" y1="250" x2="382" y2="177" stroke-dasharray="2,3" />
+    <line x1="250" y1="250" x2="382" y2="323" stroke-dasharray="2,3" />
+    <line x1="250" y1="250" x2="323" y2="382" stroke-dasharray="2,3" />
+    <line x1="250" y1="250" x2="177" y2="382" stroke-dasharray="2,3" />
+    <line x1="250" y1="250" x2="118" y2="323" stroke-dasharray="2,3" />
+    <line x1="250" y1="250" x2="118" y2="177" stroke-dasharray="2,3" />
+    <line x1="250" y1="250" x2="177" y2="118" stroke-dasharray="2,3" />
+  </g>
+
+  <!-- 7. The Holy Spirit Dove (Symbol of Peace, Deliverance, & Divine Presence) -->
+  <g filter="url(#softShadow)">
+    <!-- Right Wing Feather Details -->
+    <path d="M 250,225 C 275,190 310,165 348,158 C 342,175 330,195 315,212 C 330,195 345,185 356,182 C 346,200 334,215 318,228 C 332,216 345,208 354,206 C 342,222 328,235 310,244 C 290,252 268,248 250,240 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2" />
+    
+    <!-- Left Wing Feather Details -->
+    <path d="M 250,225 C 225,190 190,165 152,158 C 158,175 170,195 185,212 C 170,195 155,185 144,182 C 154,200 166,215 182,228 C 168,216 155,208 146,206 C 158,222 172,235 190,244 C 210,252 232,248 250,240 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2" />
+
+    <!-- Dove Body, Head & Tail -->
+    <!-- Tail Feathers -->
+    <path d="M 240,265 C 235,295 230,315 220,332 C 235,326 245,315 250,295 C 255,315 265,326 280,332 C 270,315 265,295 260,265 Z" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2" />
+
+    <!-- Sleek Torso -->
+    <path d="M 238,215 C 238,205 244,195 250,195 C 256,195 262,205 262,215 C 265,232 262,260 250,272 C 238,260 235,232 238,215 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+
+    <!-- Dove Head (Facing Left/Down in Flight) -->
+    <ellipse cx="250" cy="192" rx="11" ry="13" fill="#ffffff" />
+    
+    <!-- Beak with Olive Branch -->
+    <polygon points="250,180 246,187 254,187" fill="#fbbf24" stroke="#d97706" stroke-width="0.8" />
+    <!-- Eye -->
+    <circle cx="247" cy="190" r="1.8" fill="#1e293b" />
+    <circle cx="246.5" cy="189.5" r="0.6" fill="#ffffff" />
+
+    <!-- Olive Branch of Divine Anointing & Peace -->
+    <path d="M 250,183 C 242,176 230,174 220,175" fill="none" stroke="#15803d" stroke-width="2" stroke-linecap="round" />
+    <!-- Olive Leaves -->
+    <path d="M 224,175 C 222,171 224,166 228,168 C 230,171 228,174 224,175 Z" fill="#22c55e" stroke="#166534" stroke-width="0.8" />
+    <path d="M 232,174 C 231,169 235,166 238,168 C 240,171 236,174 232,174 Z" fill="#22c55e" stroke="#166534" stroke-width="0.8" />
+    <path d="M 240,177 C 241,172 245,170 248,172 C 248,175 244,177 240,177 Z" fill="#22c55e" stroke="#166534" stroke-width="0.8" />
+  </g>
+
+  <!-- 8. Golden Church Motto Ribbon at Base: "HEAVEN OO!!! ƐHO ƐNA YƐPƐ" -->
+  <g filter="url(#softShadow)" transform="translate(0, 15)">
+    <!-- Ribbon Back Folds (Darker Gold) -->
+    <polygon points="105,385 105,420 135,405" fill="#92400e" />
+    <polygon points="395,385 395,420 365,405" fill="#92400e" />
+
+    <!-- Ribbon Swallowtails -->
+    <polygon points="75,395 125,375 125,415 75,430 95,412" fill="url(#goldGradient)" stroke="#92400e" stroke-width="1" />
+    <polygon points="425,395 375,375 375,415 425,430 405,412" fill="url(#goldGradient)" stroke="#92400e" stroke-width="1" />
+
+    <!-- Main Curved Ribbon Front -->
+    <path d="M 115,390 C 180,372 320,372 385,390 L 380,422 C 315,404 185,404 120,422 Z" fill="url(#goldRibbon)" stroke="#78350f" stroke-width="1.8" />
+
+    <!-- Ribbon Golden Edges -->
+    <path d="M 115,392 C 180,374 320,374 385,392" fill="none" stroke="#fef08a" stroke-width="1.5" />
+    <path d="M 120,420 C 185,402 315,402 380,420" fill="none" stroke="#78350f" stroke-width="1.5" />
+
+    <!-- Motto Text: HEAVEN OO!!! ƐHO ƐNA YƐPƐ -->
+    <text x="250" y="411" font-family="'Cinzel', Georgia, serif" font-weight="900" font-size="16.5" fill="#1e1b4b" text-anchor="middle" letter-spacing="1.5">
+      HEAVEN OO!!! ƐHO ƐNA YƐPƐ
+    </text>
+  </g>
+</svg>

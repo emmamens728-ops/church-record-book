@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="portraitBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </radialGradient>
+    <linearGradient id="portraitGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+  </defs>
+
+  <!-- Circular Base -->
+  <circle cx="250" cy="250" r="240" fill="url(#portraitBg)" />
+  <circle cx="250" cy="250" r="236" fill="none" stroke="url(#portraitGold)" stroke-width="8" />
+
+  <!-- Pastoral Silhouette Representation with Anointing Halo -->
+  <circle cx="250" cy="180" r="70" fill="none" stroke="url(#portraitGold)" stroke-width="2" opacity="0.4" stroke-dasharray="4,4" />
+
+  <!-- Prophet Silhouette with Clerical Attire -->
+  <!-- Shoulders & Pastoral Suit -->
+  <path d="M 110,430 C 120,330 180,285 250,285 C 320,285 380,330 390,430 Z" fill="#1e293b" />
+  <!-- Pastoral Gold Stole / Collar -->
+  <path d="M 230,285 L 235,420 L 265,420 L 270,285 Z" fill="url(#portraitGold)" />
+  <polygon points="240,285 260,285 255,320 245,320" fill="#ffffff" />
+
+  <!-- Head & Hair -->
+  <ellipse cx="250" cy="205" rx="55" ry="65" fill="#475569" />
+  <!-- Face/Chin -->
+  <path d="M 205,190 C 205,250 220,265 250,265 C 280,265 295,250 295,190 Z" fill="#64748b" />
+  <!-- Eyes & Eyebrows subtle -->
+  <path d="M 220,185 Q 232,180 240,185" fill="none" stroke="#334155" stroke-width="3" stroke-linecap="round" />
+  <path d="M 260,185 Q 268,180 280,185" fill="none" stroke="#334155" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Badge at Bottom of Circle -->
+  <rect x="90" y="420" width="320" height="45" rx="8" fill="#0f172a" stroke="url(#portraitGold)" stroke-width="2" />
+  <text x="250" y="443" font-family="'Cinzel', Georgia, serif" font-weight="900" font-size="14" fill="url(#portraitGold)" text-anchor="middle" letter-spacing="1.5">
+    PROPHET FRANCIS KWARTENG
+  </text>
+  <text x="250" y="457" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="9.5" fill="#93c5fd" text-anchor="middle" letter-spacing="2">
+    FOUNDER &amp; GENERAL OVERSEER
+  </text>
+</svg>
